@@ -1,0 +1,276 @@
+{
+  "keyword": "comfyui api",
+  "title": "ComfyUI API Options: 7 Ways to Serve a Workflow, Compared (2026)",
+  "lastChecked": "2026-10-13",
+  "capabilityChecks": [
+    {
+      "key": "runsYourComfyuiGraph",
+      "label": "Runs your ComfyUI graph"
+    },
+    {
+      "key": "customNodesYouChoose",
+      "label": "Custom nodes you choose"
+    },
+    {
+      "key": "yourOwnModels",
+      "label": "Your own models"
+    },
+    {
+      "key": "completionWebhook",
+      "label": "Completion webhook"
+    },
+    {
+      "key": "gpusHostedForYou",
+      "label": "GPUs hosted for you"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "Best overall for an API with no ComfyUI install to run",
+      "homepage": "https://www.wireflow.ai/",
+      "docs": "https://www.wireflow.ai/docs/api/overview",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": null,
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Run a saved Wireflow workflow, from the official Run Workflows page. Replace the workflow ID and the input, and set WIREFLOW_API_KEY to your own key.",
+          "lang": "bash",
+          "code": "curl -X POST https://www.wireflow.ai/api/v1/workflows/cm1abc123/run \\\n  -H \"Authorization: Bearer $WIREFLOW_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"inputs\": {\n      \"node-tiktok\": \"https://www.tiktok.com/t/ZP8bar3Dk/\"\n    }\n  }'"
+        }
+      ],
+      "moneyPage": "https://www.wireflow.ai/comfyui-alternative",
+      "moneyPageLabel": "Wireflow ComfyUI alternative page",
+      "capabilities": {
+        "runsYourComfyuiGraph": false,
+        "customNodesYouChoose": false,
+        "yourOwnModels": false,
+        "completionWebhook": true,
+        "gpusHostedForYou": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Comfy Cloud API",
+      "tagline": "Best for running your exported graph on the official hosted service",
+      "homepage": "https://docs.comfy.org/get_started/cloud",
+      "docs": "https://docs.comfy.org/development/deploy/cloud",
+      "pricing": "https://comfy.org/pricing/",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "Comfy-Org/comfy-python-sdk",
+      "note": "The linked repository is the official Python SDK.",
+      "quickstart": [
+        {
+          "label": "Install the SDK, from the official Comfy Cloud quickstart. Then export the workflow with File, Export Workflow (API) and run it.",
+          "lang": "bash",
+          "code": "pip install comfy-sdk"
+        }
+      ],
+      "capabilities": {
+        "runsYourComfyuiGraph": true,
+        "customNodesYouChoose": false,
+        "yourOwnModels": true,
+        "completionWebhook": false,
+        "gpusHostedForYou": true
+      },
+      "live": {
+        "stars": 15,
+        "lastPush": "2026-10-12T23:42:01Z",
+        "latestRelease": "v0.5.0",
+        "latestReleaseDate": "2026-10-10",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    {
+      "n": 3,
+      "name": "ComfyDeploy",
+      "tagline": "Best for teams that share one managed ComfyUI environment",
+      "homepage": "https://www.comfydeploy.com/",
+      "docs": "https://docs.comfydeploy.com/docs/api",
+      "pricing": null,
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "comfy-deploy/comfydeploy",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Queue a run, from the official Queue Run reference. Add your Bearer token and your own deployment_id.",
+          "lang": "bash",
+          "code": "curl -X POST \"https://api.comfydeploy.com/api/run/deployment/queue\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"deployment_id\": \"15e79589-12c9-453c-a41a-348fdd7de957\"\n  }'"
+        }
+      ],
+      "capabilities": {
+        "runsYourComfyuiGraph": true,
+        "customNodesYouChoose": true,
+        "yourOwnModels": true,
+        "completionWebhook": true,
+        "gpusHostedForYou": true
+      },
+      "live": {
+        "stars": 458,
+        "lastPush": "2025-09-19T01:52:12Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-13"
+      }
+    },
+    {
+      "n": 4,
+      "name": "Replicate cog-comfyui",
+      "tagline": "Best for sending a graph to a shared hosted model",
+      "homepage": "https://github.com/replicate/cog-comfyui",
+      "docs": null,
+      "pricing": "https://replicate.com/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "replicate/cog-comfyui",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Run a workflow file with Cog, from the cog-comfyui README.",
+          "lang": "bash",
+          "code": "cog predict -i workflow_json=@your_workflow.json"
+        }
+      ],
+      "capabilities": {
+        "runsYourComfyuiGraph": true,
+        "customNodesYouChoose": true,
+        "yourOwnModels": true,
+        "completionWebhook": true,
+        "gpusHostedForYou": true
+      },
+      "live": {
+        "stars": 770,
+        "lastPush": "2025-11-03T18:54:57Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-13"
+      }
+    },
+    {
+      "n": 5,
+      "name": "RunPod worker-comfyui",
+      "tagline": "Best for your own serverless endpoint with a webhook",
+      "homepage": "https://github.com/runpod-workers/worker-comfyui",
+      "docs": "https://github.com/runpod-workers/worker-comfyui/blob/main/docs/deployment.md",
+      "pricing": "https://www.runpod.io/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "runpod-workers/worker-comfyui",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Send a workflow to the sync endpoint, from the worker-comfyui README. Replace <api_key> and <endpoint_id>, and put your Export (API) JSON in input.workflow.",
+          "lang": "bash",
+          "code": "curl -X POST \\\n  -H \"Authorization: Bearer <api_key>\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"input\":{\"workflow\":{... your workflow JSON ...}}}' \\\n  https://api.runpod.ai/v2/<endpoint_id>/runsync"
+        }
+      ],
+      "capabilities": {
+        "runsYourComfyuiGraph": true,
+        "customNodesYouChoose": true,
+        "yourOwnModels": true,
+        "completionWebhook": true,
+        "gpusHostedForYou": true
+      },
+      "live": {
+        "stars": 749,
+        "lastPush": "2026-09-21T22:37:24Z",
+        "latestRelease": "5.11.0",
+        "latestReleaseDate": "2026-09-21",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    {
+      "n": 6,
+      "name": "SaladCloud comfyui-api",
+      "tagline": "Best for a stateless wrapper inside your own container",
+      "homepage": "https://github.com/SaladTechnologies/comfyui-api",
+      "docs": null,
+      "pricing": null,
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "SaladTechnologies/comfyui-api",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Add the server to your own ComfyUI Dockerfile, from the comfyui-api README.",
+          "lang": "dockerfile",
+          "code": "# Change this to the version you want to use\nARG api_version=1.19.0\n\n# Download the comfyui-api binary, and make it executable\nADD https://github.com/SaladTechnologies/comfyui-api/releases/download/${api_version}/comfyui-api .\nRUN chmod +x comfyui-api\n\n# Set CMD to launch the comfyui-api binary. The comfyui-api binary will launch ComfyUI as a child process.\nCMD [\"./comfyui-api\"]"
+        }
+      ],
+      "capabilities": {
+        "runsYourComfyuiGraph": true,
+        "customNodesYouChoose": true,
+        "yourOwnModels": true,
+        "completionWebhook": true,
+        "gpusHostedForYou": false
+      },
+      "live": {
+        "stars": 455,
+        "lastPush": "2026-09-18T15:58:37Z",
+        "latestRelease": "1.19.2",
+        "latestReleaseDate": "2026-09-18",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    {
+      "n": 7,
+      "name": "comfy-api-proxy",
+      "tagline": "Best for the cloud contract on a machine you already run",
+      "homepage": "https://github.com/Comfy-Org/comfy-api-proxy",
+      "docs": "https://docs.comfy.org/api-reference/v2/overview",
+      "pricing": null,
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "Comfy-Org/comfy-api-proxy",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Install and start the proxy, from the comfy-api-proxy README. By default it proxies the ComfyUI on 127.0.0.1:8188 and serves the v2 API on port 8189.",
+          "lang": "bash",
+          "code": "pip install comfy-api-proxy\ncomfy-api-proxy"
+        }
+      ],
+      "capabilities": {
+        "runsYourComfyuiGraph": true,
+        "customNodesYouChoose": true,
+        "yourOwnModels": true,
+        "completionWebhook": null,
+        "gpusHostedForYou": false
+      },
+      "live": {
+        "stars": 13,
+        "lastPush": "2026-09-29T05:06:10Z",
+        "latestRelease": "v0.1.6",
+        "latestReleaseDate": "2026-08-19",
+        "checkedAt": "2026-10-13"
+      }
+    }
+  ]
+}
