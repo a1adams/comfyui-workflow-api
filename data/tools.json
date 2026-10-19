@@ -1,7 +1,7 @@
 {
   "keyword": "comfyui api",
   "title": "ComfyUI API Options: 7 Ways to Serve a Workflow, Compared (2026)",
-  "lastChecked": "2026-10-13",
+  "lastChecked": "2026-10-19",
   "capabilityChecks": [
     {
       "key": "runsYourComfyuiGraph",
@@ -90,11 +90,11 @@
         "gpusHostedForYou": true
       },
       "live": {
-        "stars": 15,
-        "lastPush": "2026-10-12T23:42:01Z",
+        "stars": 16,
+        "lastPush": "2026-10-19T05:16:07Z",
         "latestRelease": "v0.5.0",
         "latestReleaseDate": "2026-10-10",
-        "checkedAt": "2026-10-13"
+        "checkedAt": "2026-10-19"
       }
     },
     {
@@ -129,7 +129,7 @@
         "lastPush": "2025-09-19T01:52:12Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-13"
+        "checkedAt": "2026-10-19"
       }
     },
     {
@@ -160,11 +160,11 @@
         "gpusHostedForYou": true
       },
       "live": {
-        "stars": 770,
+        "stars": 769,
         "lastPush": "2025-11-03T18:54:57Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-13"
+        "checkedAt": "2026-10-19"
       }
     },
     {
@@ -199,7 +199,7 @@
         "lastPush": "2026-09-21T22:37:24Z",
         "latestRelease": "5.11.0",
         "latestReleaseDate": "2026-09-21",
-        "checkedAt": "2026-10-13"
+        "checkedAt": "2026-10-19"
       }
     },
     {
@@ -230,11 +230,11 @@
         "gpusHostedForYou": false
       },
       "live": {
-        "stars": 455,
+        "stars": 457,
         "lastPush": "2026-09-18T15:58:37Z",
         "latestRelease": "1.19.2",
         "latestReleaseDate": "2026-09-18",
-        "checkedAt": "2026-10-13"
+        "checkedAt": "2026-10-19"
       }
     },
     {
@@ -269,7 +269,7 @@
         "lastPush": "2026-09-29T05:06:10Z",
         "latestRelease": "v0.1.6",
         "latestReleaseDate": "2026-08-19",
-        "checkedAt": "2026-10-13"
+        "checkedAt": "2026-10-19"
       }
     }
   ]
