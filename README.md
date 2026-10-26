@@ -15,7 +15,7 @@ We build Wireflow, and entry 1 is the only one here that does not run ComfyUI, s
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-19** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-26** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
 Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -48,8 +48,8 @@ One row per tool, one column per thing people actually check before committing. 
 | Tool | REST API | Free tier | Pricing | Open-source SDK / MCP |
 |---|---|---|---|---|
 | **[Wireflow](#1-wireflow)** | Yes | [check](https://www.wireflow.ai/pricing) | [pricing](https://www.wireflow.ai/pricing) | n/a |
-| **[Comfy Cloud API](#2-comfy-cloud-api)** | Yes | [check](https://comfy.org/pricing/) | [pricing](https://comfy.org/pricing/) | [Comfy-Org/comfy-python-sdk](https://github.com/Comfy-Org/comfy-python-sdk), 16 ★, v0.5.0 |
-| **[ComfyDeploy](#3-comfydeploy)** | Yes | n/a | n/a | [comfy-deploy/comfydeploy](https://github.com/comfy-deploy/comfydeploy), 458 ★, pushed 2025-09-19 |
+| **[Comfy Cloud API](#2-comfy-cloud-api)** | Yes | [check](https://comfy.org/pricing/) | [pricing](https://comfy.org/pricing/) | [Comfy-Org/comfy-python-sdk](https://github.com/Comfy-Org/comfy-python-sdk), 17 ★, v0.5.0 |
+| **[ComfyDeploy](#3-comfydeploy)** | Yes | n/a | n/a | [comfy-deploy/comfydeploy](https://github.com/comfy-deploy/comfydeploy), 460 ★, pushed 2025-09-19 |
 | **[Replicate cog-comfyui](#4-replicate-cog-comfyui)** | Yes | [check](https://replicate.com/pricing) | [pricing](https://replicate.com/pricing) | [replicate/cog-comfyui](https://github.com/replicate/cog-comfyui), 769 ★, pushed 2025-11-03 |
 | **[RunPod worker-comfyui](#5-runpod-worker-comfyui)** | Yes | [check](https://www.runpod.io/pricing) | [pricing](https://www.runpod.io/pricing) | [runpod-workers/worker-comfyui](https://github.com/runpod-workers/worker-comfyui), 749 ★, 5.11.0 |
 | **[SaladCloud comfyui-api](#6-saladcloud-comfyui-api)** | Yes | Yes | n/a | [SaladTechnologies/comfyui-api](https://github.com/SaladTechnologies/comfyui-api), 457 ★, 1.19.2 |
