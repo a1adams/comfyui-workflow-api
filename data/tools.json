@@ -1,7 +1,7 @@
 {
   "keyword": "comfyui api",
   "title": "ComfyUI API Options: 7 Ways to Serve a Workflow, Compared (2026)",
-  "lastChecked": "2026-11-09",
+  "lastChecked": "2026-11-16",
   "capabilityChecks": [
     {
       "key": "runsYourComfyuiGraph",
@@ -91,10 +91,10 @@
       },
       "live": {
         "stars": 18,
-        "lastPush": "2026-11-09T12:18:54Z",
+        "lastPush": "2026-11-16T06:02:24Z",
         "latestRelease": "v0.5.0",
         "latestReleaseDate": "2026-10-10",
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-16"
       }
     },
     {
@@ -129,7 +129,7 @@
         "lastPush": "2025-09-19T01:52:12Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-16"
       }
     },
     {
@@ -164,7 +164,7 @@
         "lastPush": "2025-11-03T18:54:57Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-16"
       }
     },
     {
@@ -195,11 +195,11 @@
         "gpusHostedForYou": true
       },
       "live": {
-        "stars": 750,
+        "stars": 749,
         "lastPush": "2026-09-21T22:37:24Z",
         "latestRelease": "5.11.0",
         "latestReleaseDate": "2026-09-21",
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-16"
       }
     },
     {
@@ -230,11 +230,11 @@
         "gpusHostedForYou": false
       },
       "live": {
-        "stars": 460,
+        "stars": 461,
         "lastPush": "2026-09-18T15:58:37Z",
         "latestRelease": "1.19.2",
         "latestReleaseDate": "2026-09-18",
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-16"
       }
     },
     {
@@ -266,10 +266,10 @@
       },
       "live": {
         "stars": 13,
-        "lastPush": "2026-09-29T05:06:10Z",
+        "lastPush": "2026-11-16T07:17:50Z",
         "latestRelease": "v0.1.6",
         "latestReleaseDate": "2026-08-19",
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-16"
       }
     }
   ]
